@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<title>약물검색</title>
+<html lang="en">
+<link rel="stylesheet" href="/static/images/style1.css">
+<link rel="stylesheet" href="/static/images/style2.css">
+<link rel="stylesheet" href="/static/images/style7.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+</style>
+<script src=“https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script>function locationHref(){location.href="http://210.94.185.25/cellsofcapstone";}</script>
+</head>
+<body>
+<div id="header">
+<center>
+<ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+<font size="2em" color="red">*노인환자만을 대상으로 한 결과입니다.</font>
+<br>
+<br>
+<span style="font-weight:bold;display:block;width:520px;border-top:3px solid black;border-bottom:3px solid black";>
+<br>
+<br>
+
+&nbsp; &nbsp; &nbsp; <font size="10em">"{{drug}}" <br></font>
+&nbsp; &nbsp; <font size="10em"> {{side_per}}%</font><br><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 부 작 용 &nbsp;:&nbsp;  {{side_effect}} <br><br>
+<br>
+처방받은 노인환자의 수 &nbsp;:&nbsp; {{eld_num}}<br>
+부작용진단 환자의 수 &nbsp;:&nbsp; {{side_num}}<br>
+부작용진단 환자 평균연령 &nbsp;:&nbsp; {{avg_age}}
+<br>
+<br>
+<br>
+</span>
+</ul>
+</center></div>
+
+<center>
+<div class="wrap">
+<button class="btn-1" onclick="location.href='/cellsofcapstone'">Close</button>
+</div>
+</center>
+
+</body>
+</html>
