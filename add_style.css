@@ -1,0 +1,44 @@
+body {
+    background: #e5f0ff;
+}
+
+div[class="add-container"] {
+    margin: 100px
+}
+
+fieldset {
+    width: 500px;
+    font-size: 20px;
+    margin: 10px 5px;
+}
+
+legend {
+    align-self: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 400px;
+    text-align: right;
+    padding: 16px 20px;
+    border: 2px solid grey;
+    border-radius: 4px;
+    margin: 10px 5px;
+}
+
+input[type=text]:focus {
+    border: 3px solid lightcoral;
+    border-radius: 4px;
+    margin: 10px 5px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 10px 5px;
+    cursor: pointer;
+}

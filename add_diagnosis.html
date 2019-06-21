@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Diagnosis</title>
+    <link rel="stylesheet" href="/static/images/style7.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/static/images/add_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script language="javascript">
+    function shift() {
+        location.href="/completediagnosis"
+    };
+    </script>
+    <style>
+    body {
+	background: #e5f0ff;
+    }
+    </style>
+</head>
+<body>
+<center>
+    <div class="add-box">
+        <div class="add-container">
+            <form name="add-form" action="/completediagnosis"  method="POST">
+                {% csrf_token %}
+                <fieldset>
+                    <legend>진단 정보 입력</legend>
+                        환자 번호 <input type="text" id="ptid" name="ptid"/><br><br>
+                        방문 유형 <input type="text" id="vtype" name="vtype"/><br><br>
+                        진료일 <input type="text" id="date" name="date" onload="today();"/><br><br>
+                        진단 코드 <input type="text" id="code" name="code"/><br><br>
+                        진단명 <input type="text" id="diagnosis" name="diagnosis"/><br><br>
+                        주상병 여부 <input type="text" id="disease" name="disease"/><br><br>
+                    <center>            
+<div class="wrap">
+<button class="btn-1" type="sumit"  onclick="shift();">Add</button>
+</div>      
+</center>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</center>
+</body>
+</html>

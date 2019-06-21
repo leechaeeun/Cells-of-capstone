@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Medication Complete</title>
+    <script>
+    function locationHref() {
+        location.href="http://210.94.185.25/cellsofcapstone";
+    }
+    </script>
+    <link rel="stylesheet" href="/static/images/add_complete_style.css">
+    <link rel="stylesheet" href="/static/images/style7.css">
+</head>
+<body>
+<br>
+<center>
+    <div class="com-box">
+        <span class="com-container">
+<br>
+            <div class="com-title">저장이 완료되었습니다.</div>
+            <br>
+            환자 번호 : {{ ptid }}<br>
+            처방일 : {{ mdate }}<br>
+            EDI 코드 : {{ ecode }}<br>
+            약품 코드 : {{ ocode }}<br>    
+            약품명 : {{ oname }}<br>
+            투약 수량 : {{ amount }}<br>
+            투약 단위 : {{ unit }}<br>
+            총 투여 횟수 : {{ tnum }}<br>
+            투약 기간 : {{ period }}<br>
+            투약 기간 단위 : {{ punit }}<br>
+<br>
+        </span>
+    </div>
+<br>
+<center>
+<div class="wrap">
+<button class="btn-1" type="Close" onclick="locationHref();">Close</button>
+</div>
+</center>
+</center>
+</body>
+</html>

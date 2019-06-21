@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Medication</title>
+    <link rel="stylesheet" href="/static/images/style7.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/static/images/add_style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script language="javascript">  
+    function shift() {
+        location.href="/completemedication"
+    };
+    </script>
+    <style>
+    body {
+        background: #e5f0ff;
+    }
+    </style>
+</head>
+<body>
+<center>
+    <div class="add-box">
+        <div class="add-container">
+            <form name="add-form" action="/completemedication"  method="POST">
+                {% csrf_token %}
+                <fieldset>
+                    <legend>투약 정보 입력</legend>
+                        환자 번호 <input type="text" id="ptid" name="ptid"/><br><br>
+                        처방일 <input type="text" id="mdate" name="mdate"/><br><br>
+                        EDI 코드 <input type="text" id="ecode" name="ecode"/><br><br>
+                        약품 코드 <input type="text" id="ocode" name="ocode"/><br><br>
+                        약품명 <input type="text" id="oname" name="oname"/><br><br>
+                        투약 수량 <input type="text" id="amount" name="amount"/><br><br>
+                        투약 단위 <input type="text" id="unit" name="unit"/><br><br>
+                        총 투여 횟수 <input type="text" id="tnum" name="tnum"/><br><br>
+                        투약 기간 <input type="text" id="period" name="period"/><br><br>
+                        투약 기간 단위 <input type="text" id="punit" name="punit"/><br><br>
+<center>            
+<div class="wrap">
+<button class="btn-1" type="sumit"  onclick="shift();">Add</button>
+</div>      
+</center>
+          
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</center>
+</body>
+</html>
